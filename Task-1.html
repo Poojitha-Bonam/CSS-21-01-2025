@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media_Queries-Task-1</title>
+    <style>
+        /*1st-Question*/
+        @media screen and (width >= 768px) and (width <= 1024px){
+            body {
+                background-color: lightblue;
+            }
+        }
+        /*2nd-Question*/
+        @media screen and (width >= 600px) and (width<=1200px) {
+            p {
+                font-size: 18px;
+            }
+        }
+        /*3rd-Question*/
+        .item-1 {
+            background-color: lightcoral;
+        }
+        .item-2 {
+            background-color: gray;
+        }
+        .item-3 {
+            background-color: yellowgreen;
+        }
+        .item-4 {
+            background-color: purple;
+        }
+        .item {
+            font-size: 15px;
+            flex:1;
+        }
+        @media screen and (width >= 480px) {
+            .container {
+                display: flex;
+                justify-content: space-between;
+                display:flex;
+            }
+        }
+        /*4th-Question*/
+        @media screen and (min-width : 500px) and (max-width : 800px) {
+            h1 {
+                color:green;
+            }
+        }
+        /*5th-Question*/
+        @media screen and (max-width : 400px) {
+            img {
+                display: none;
+            }
+        }
+        .box {
+            border: 2px solid black;
+            background-color: aqua;
+            width:100%;
+        }
+        /*6th-Question*/
+        @media screen and (min-width : 1024px) {
+            .box {
+                padding:20px;
+                background-color: purple;
+            }
+        }
+        /*7th-Question*/
+        @media screen and (min-width : 600px) and (max-width : 1200px){
+            header>p {
+                background-color: lightgray;
+            }
+        }
+        /*8th-Question*/
+        @media screen and (max-width : 480px){
+            .paragraph>p {
+                font-size: 16px;
+            }
+        }
+        /*9th-Question*/
+        .task-9 {
+            display: flex;
+            flex: 1;
+        }
+        .task-9 div {
+            border: 2px solid black;
+            background-color: red;
+        }
+        .task-9>.col-2 {
+            background-color: purple;
+        }
+        @media screen and (width >= 768px) and (width <= 1200px) {
+            .task-9 {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+        /*10th-Question*/
+        @media screen and (max-width : 600px) {
+            .image>img {
+                width: 100%;
+            }
+        }
+        /*11th-Question*/
+        @media screen and (width >= 700px) and (width <= 1200px) {
+            .anchorTag a {
+                color: blue;
+            }   
+        }
+        /*12th-Question*/
+        @media screen and (width >= 500px) and (width <= 800px) {
+            .task-12 {
+                font-size: 24px;
+            }
+        }
+        /*13th-Question*/
+        @media screen and (min-width : 1024px) {
+            .task-13 {
+                width: 200px;
+                height: 200px;
+                border: 2px solid black;
+                background-color: purple;
+            }
+        }
+        /*14th-Question*/
+        .task-14 {
+            border: 2px solid black;
+        }
+        @media screen and (min-width : 800px) and (max-width : 1200px) {
+            .task-14 {
+                width : 250px;
+            }
+        }
+        /*15th-Question*/
+        .task-15 {
+            display: flex;
+            flex: 1;
+        }
+        .task-15 div {
+            background-color: gray;
+            border: 2px solid black;
+        }
+        @media screen and (min-width : 600px) {
+            .task-15 {
+                width: fit-content;
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h2>2nd-Question</h2>
+    <p>Viewport changes font size to 18px when the viewport width is at least 600px but less than 1200px.</p>
+    <h2>3rd-Question</h2>
+    <div class="container">
+        <div class="item item-1">ITEM-1</div>
+        <div class="item item-2">ITEM-2</div>
+        <div class="item item-3">ITEM-3</div>
+        <div class="item item-4">ITEM-4</div>
+    </div>
+    <h2>4th-Question</h2>
+    <h1>Pooji</h1>
+    <h2>5th-Question</h2>
+    <img src="../03-01-2025/Brickhouse.jpg" alt="">
+    <h2>6th-Question</h2>
+    <div class="box">POOJI</div>
+    <h2>7th-Question</h2>
+    <header>
+        <p>HELLO_WORLD</p>
+    </header>
+    <h2>8th-Question</h2>
+    <div class="paragraph">
+        <p>paragraph-1</p>
+        <p>paragraph-2</p>
+        <p>paragraph-3</p>
+    </div>
+    <h2>9th-Question</h2>
+    <div class="task-9">
+        <div class="col-1">column-1</div>
+        <div class="col-2">column-2</div>
+    </div>
+    <h2>10th-Question</h2>
+    <div class="image">
+        <img src="../03-01-2025/Brickhouse.jpg" alt="">
+    </div>
+    <h2>11th-Question</h2>
+    <div class="anchorTag">
+        <a href="">HOME</a>
+        <a href="">ABOUT</a>
+        <a href="">CONTACT</a>
+    </div>
+    <h2>12th-Question</h2>
+    <div class="task-12">
+        <h2>ELEMENT-1</h2>
+        <h2>ELEMENT-2</h2>
+        <h2>ELEMENT-3</h2>
+    </div>
+    <h2>13th-Question</h2>
+    <div class="task-13"></div>
+    <h2>14th-Question</h2>
+    <div class="task-14">SIDE BAR</div>
+    <h2>15th-Question</h2>
+    <div class="task-15">
+        <div>POOJI</div>
+        <div>POOJI</div>
+        <div>POOJI</div>
+    </div>
+</body>
+</html>
